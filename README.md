@@ -48,6 +48,7 @@ Data-Structures-leet-code/
 │
 ├── Strings/
 ├── Arrays/
+├── BitManipulation/
 ├── LinkedList/
 ├── Stack/
 ├── Queue/
