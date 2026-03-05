@@ -15,6 +15,7 @@ jobs:
 
       - name: Count Java Files
         run: |
+          NUMBERS=$(find Numbers -name "*.java" 2>/dev/null | wc -l)
           STRINGS=$(find Strings -name "*.java" 2>/dev/null | wc -l)
           ARRAYS=$(find Arrays -name "*.java" 2>/dev/null | wc -l)
           BITMANIPULATION=$(find BitManipulation -name "*.java" 2>/dev/null | wc -l)
@@ -25,8 +26,8 @@ jobs:
           GRAPHS=$(find Graphs -name "*.java" 2>/dev/null | wc -l)
           DP=$(find DynamicProgramming -name "*.java" 2>/dev/null | wc -l)
 
-          TTOTAL=$((STRINGS+ARRAYS+BITMANIPULATION+LINKEDLIST+STACK+QUEUE+TREES+GRAPHS+DP))
-
+          TOTAL=$((STRINGS+ARRAYS+BITMANIPULATION+NUMBERS+LINKEDLIST+STACK+QUEUE+TREES+GRAPHS+DP))
+          sed -i "s/| Numbers | .*/| Numbers | $NUMBERS |/" README.md
           sed -i "s/| Strings | .*/| Strings | $STRINGS |/" README.md
           sed -i "s/| Arrays | .*/| Arrays | $ARRAYS |/" README.md
           sed -i "s/| BitManipulation | .*/| BitManipulation | $BITMANIPULATION |/" README.md
