@@ -12,7 +12,7 @@
 |-------|----------|
 | Strings | 8 |
 | Arrays | 2 |
-| BitManipulation | 2 |
+| BitManipulation | 3 |
 | LinkedList | 0 |
 | Stack | 0 |
 | Queue | 0 |
