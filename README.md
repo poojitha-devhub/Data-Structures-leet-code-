@@ -20,7 +20,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 
+> 🔥 Total Problems Solved: 14
 
 ---
 
