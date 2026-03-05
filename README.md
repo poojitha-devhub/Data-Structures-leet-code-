@@ -10,6 +10,7 @@
 
 | Topic | Problems |
 |-------|----------|
+| Numbers | 8 |
 | Strings | 8 |
 | Arrays | 2 |
 | BitManipulation | 3 |
