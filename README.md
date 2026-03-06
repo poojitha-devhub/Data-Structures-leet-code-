@@ -12,7 +12,7 @@
 |-------|----------|
 | Numbers | 1 |
 | Strings | 8 |
-| Arrays | 3 |
+| Arrays | 4 |
 | BitManipulation | 3 |
 | LinkedList | 0 |
 | Stack | 0 |
@@ -21,7 +21,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 15
+> 🔥 Total Problems Solved: 16
 
 ---
 
