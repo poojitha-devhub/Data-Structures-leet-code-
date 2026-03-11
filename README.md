@@ -10,7 +10,7 @@
 
 | Topic | Problems |
 |-------|----------|
-| Numbers | 3 |
+| Numbers | 4 |
 | Strings | 9 |
 | Arrays | 7 |
 | BitManipulation | 6 |
@@ -21,7 +21,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 25
+> 🔥 Total Problems Solved: 26
 
 ---
 
