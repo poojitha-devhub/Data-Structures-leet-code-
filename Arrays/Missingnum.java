@@ -23,8 +23,6 @@ public class Missingnum {
         Missingnum obj=new Missingnum();
         int result=obj.missingPositiveNumber(nums);
         System.out.println(result);
-
-
     }
     
 }

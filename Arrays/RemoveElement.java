@@ -13,8 +13,7 @@ public class RemoveElement {
             }
         }
         for (int j = 0; j < i; j++) {
-            System.out.print(nums[j]);
-            
+            System.out.print(nums[j]);    
         }
     }
     
