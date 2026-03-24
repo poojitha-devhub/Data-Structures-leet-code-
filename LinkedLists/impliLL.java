@@ -7,8 +7,11 @@ public class impliLL {
         List.addFirst("a");
         List.addFirst("is");
         System.out.println(List);
+        List.add("Linked");//adds last
         List.addLast("List");
+
         System.out.println(List);
+        System.out.println(List.size());
 
     }
     
