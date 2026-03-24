@@ -14,9 +14,16 @@ public class impliLL {
         System.out.println(List.size());
         //iteration print
         for(int i=0;i<List.size();i++){
+
             System.out.print(List.get(i)+"--> ");//list.get(i) gets element at index i
         }
         System.out.println("null");
+        //search
+        for(int j=0;j<List.size();j++){
+            if(List.get(j)=="is"){
+                System.out.println("index"+j);
+            }
+        }
 
 
     }
