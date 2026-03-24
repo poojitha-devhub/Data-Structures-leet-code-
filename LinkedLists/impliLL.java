@@ -12,6 +12,12 @@ public class impliLL {
 
         System.out.println(List);
         System.out.println(List.size());
+        //iteration print
+        for(int i=0;i<List.size();i++){
+            System.out.print(List.get(i)+"--> ");//list.get(i) gets element at index i
+        }
+        System.out.println("null");
+
 
     }
     
