@@ -21,8 +21,7 @@ public class reverseList {
         Node currnode=head;
         while(currnode.next!=null){
             
-            currnode=currnode.next;
-            
+            currnode=currnode.next;    
             
         }
         currnode.next=newnode;
@@ -47,7 +46,7 @@ public class reverseList {
     }
     public void printlist(){
         if(head==null){
-            System.out.println("list is empty");
+            System.out.println("This list is empty");
             return;
         }
         Node currnode=head;
