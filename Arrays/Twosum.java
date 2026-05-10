@@ -19,7 +19,7 @@ public class Twosum {
         Twosum obj=new Twosum();
         int result[]=obj.twosumnum(arr,target);
         for (int i=0;i<result.length;i++){
-            System.out.print("result is"+result[i]+" ");
+            System.out.print(result[i]+" ");
         }
         
 
