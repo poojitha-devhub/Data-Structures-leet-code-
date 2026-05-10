@@ -18,7 +18,7 @@ public class RemoveDuplicates {
             i++;
         }
         for(int k=0;k<nums.length;k++){
-            System.out.print(nums[k]);
+            System.out.print("result"+" " + nums[k]+" ");
         }
     }
     
