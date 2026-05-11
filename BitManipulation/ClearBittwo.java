@@ -9,7 +9,7 @@ public class ClearBittwo {
         int n=6;//110
         int pos=1;
         int bitmask=1<<pos;
-        System.out.println("clear bit:"+~(bitmask)&n);
+        System.out.println("clear bit:"+ (~(bitmask)&n));
     }
     
 }
