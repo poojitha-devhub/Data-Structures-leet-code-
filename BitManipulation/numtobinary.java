@@ -8,7 +8,7 @@ public class numtobinary {
             n=n/2;
         }
         binary.reverse();
-        System.out.println(binary);
+        System.out.println("binary num :"+ binary);
     }
     
 }
