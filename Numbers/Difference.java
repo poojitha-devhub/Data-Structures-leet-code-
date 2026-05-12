@@ -27,7 +27,7 @@ public class Difference {
         int m=3;
         Difference obj=new Difference();
         int result=obj.differenceOfSums(n, m);
-        System.out.println(result);
+        System.out.println("result is:"+ result);
 
     }
 
