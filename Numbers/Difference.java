@@ -28,6 +28,7 @@ public class Difference {
         Difference obj=new Difference();
         int result=obj.differenceOfSums(n, m);
         System.out.println("result is:"+ result);
+        System.out.println("result is:"+ result);
 
     }
 
