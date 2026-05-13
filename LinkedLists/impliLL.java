@@ -9,7 +9,7 @@ public class impliLL {
         System.out.println(List);
         List.add("Linked");//adds last
         List.addLast("List");
-        List.addLast("Practice");
+        List.addLast("Practice coding");
         List.addLast("from");
         List.addLast("Apna");
         List.addLast("College");
