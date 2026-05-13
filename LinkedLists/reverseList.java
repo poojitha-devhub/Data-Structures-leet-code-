@@ -46,7 +46,7 @@ public class reverseList {
     }
     public void printlist(){
         if(head==null){
-            System.out.println("This list is empty");
+            System.out.println("Empty List");
             return;
         }
         Node currnode=head;
