@@ -33,7 +33,7 @@ public class Averagesum {
         int nums[]={1,3,6,10,12,15};
         Averagesum obj = new Averagesum();
         int result=obj.averageValue(nums);
-        System.out.println(result);
+        System.out.println("result" + result);
     }
     
 }
