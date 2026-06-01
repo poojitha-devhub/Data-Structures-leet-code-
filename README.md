@@ -10,8 +10,8 @@
 
 | Topic | Problems |
 |-------|----------|
-| Numbers | 10 |
-| Strings | 9 |
+| Numbers | 18 |
+| Strings | 10 |
 | Arrays | 12 |
 | BitManipulation | 8 |
 | LinkedList | 0 |
@@ -21,7 +21,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 39
+> 🔥 Total Problems Solved: 48
 
 ---
 
