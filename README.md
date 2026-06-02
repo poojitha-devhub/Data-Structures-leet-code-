@@ -15,7 +15,7 @@
 | Arrays | 12 |
 | BitManipulation | 8 |
 | LinkedLists | 9 |
-| Stacks | 0 |
+| Stacks | 1 |
 | Queues | 0 |
 | Trees | 0 |
 | Graphs | 0 |
