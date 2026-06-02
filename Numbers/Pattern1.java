@@ -1,5 +1,5 @@
 package Numbers;
-
+// star triangle
 public class Pattern1 {
     public static void main(String[] args) {
         int n=4;

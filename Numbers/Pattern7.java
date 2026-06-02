@@ -1,5 +1,5 @@
 package Numbers;
-
+//inverted pyramid numbers
 public class Pattern7 {
     public static void inv_pyramid_num(int n){
         for(int i=1;i<=n;i++){

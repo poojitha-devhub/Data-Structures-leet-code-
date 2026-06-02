@@ -1,5 +1,5 @@
 package Numbers;
-
+//Hollow Rectangle
 public class Pattern5 {
     public static void hollow_Rectangle(int rows,int cols){
         for(int i=1;i<=rows;i++){

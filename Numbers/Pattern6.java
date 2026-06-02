@@ -1,5 +1,5 @@
 package Numbers;
-
+//reverse inverted pyramid
 public class Pattern6 {
     public static void rev_pyramid(int rows,int cols){
         for (int i=1;i<=rows;i++){
