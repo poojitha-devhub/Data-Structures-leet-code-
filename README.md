@@ -15,13 +15,13 @@
 | Arrays | 12 |
 | BitManipulation | 8 |
 | LinkedLists | 9 |
-| Stack | 0 |
-| Queue | 0 |
+| Stacks | 1 |
+| Queues | 0 |
 | Trees | 0 |
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 62
+> 🔥 Total Problems Solved: 63
 
 ---
 
