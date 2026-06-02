@@ -14,7 +14,7 @@
 | Strings | 10 |
 | Arrays | 12 |
 | BitManipulation | 8 |
-| LinkedList | 0 |
+| LinkedLists | 0 |
 | Stack | 0 |
 | Queue | 0 |
 | Trees | 0 |
