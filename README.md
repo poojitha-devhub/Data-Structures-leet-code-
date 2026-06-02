@@ -10,18 +10,18 @@
 
 | Topic | Problems |
 |-------|----------|
-| Numbers | 22 |
+| Numbers | 23 |
 | Strings | 10 |
 | Arrays | 12 |
 | BitManipulation | 8 |
-| LinkedList | 0 |
+| LinkedLists | 0 |
 | Stack | 0 |
 | Queue | 0 |
 | Trees | 0 |
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 52
+> 🔥 Total Problems Solved: 53
 
 ---
 
