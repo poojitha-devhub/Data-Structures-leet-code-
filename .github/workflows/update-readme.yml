@@ -20,8 +20,8 @@ jobs:
           ARRAYS=$(find Arrays -name "*.java" 2>/dev/null | wc -l)
           BITMANIPULATION=$(find BitManipulation -name "*.java" 2>/dev/null | wc -l)
           LINKEDLIST=$(find LinkedLists -name "*.java" 2>/dev/null | wc -l)
-          STACK=$(find Stack -name "*.java" 2>/dev/null | wc -l)
-          QUEUE=$(find Queue -name "*.java" 2>/dev/null | wc -l)
+          STACK=$(find Stacks -name "*.java" 2>/dev/null | wc -l)
+          QUEUE=$(find Queues -name "*.java" 2>/dev/null | wc -l)
           TREES=$(find Trees -name "*.java" 2>/dev/null | wc -l)
           GRAPHS=$(find Graphs -name "*.java" 2>/dev/null | wc -l)
           DP=$(find DynamicProgramming -name "*.java" 2>/dev/null | wc -l)
@@ -32,8 +32,8 @@ jobs:
           sed -i "s/| Arrays | .*/| Arrays | $ARRAYS |/" README.md
           sed -i "s/| BitManipulation | .*/| BitManipulation | $BITMANIPULATION |/" README.md
           sed -i "s/| LinkedLists | .*/| LinkedLists | $LINKEDLIST |/" README.md
-          sed -i "s/| Stack | .*/| Stack | $STACK |/" README.md
-          sed -i "s/| Queue | .*/| Queue | $QUEUE |/" README.md
+          sed -i "s/| Stacks | .*/| Stacks | $STACK |/" README.md
+          sed -i "s/| Queues | .*/| Queues | $QUEUE |/" README.md
           sed -i "s/| Trees | .*/| Trees | $TREES |/" README.md
           sed -i "s/| Graphs | .*/| Graphs | $GRAPHS |/" README.md
           sed -i "s/| DynamicProgramming | .*/| DynamicProgramming | $DP |/" README.md
