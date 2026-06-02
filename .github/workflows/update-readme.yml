@@ -19,7 +19,7 @@ jobs:
           STRINGS=$(find Strings -name "*.java" 2>/dev/null | wc -l)
           ARRAYS=$(find Arrays -name "*.java" 2>/dev/null | wc -l)
           BITMANIPULATION=$(find BitManipulation -name "*.java" 2>/dev/null | wc -l)
-          LINKEDLIST=$(find LinkedList -name "*.java" 2>/dev/null | wc -l)
+          LINKEDLIST=$(find LinkedLists -name "*.java" 2>/dev/null | wc -l)
           STACK=$(find Stack -name "*.java" 2>/dev/null | wc -l)
           QUEUE=$(find Queue -name "*.java" 2>/dev/null | wc -l)
           TREES=$(find Trees -name "*.java" 2>/dev/null | wc -l)
@@ -31,7 +31,7 @@ jobs:
           sed -i "s/| Strings | .*/| Strings | $STRINGS |/" README.md
           sed -i "s/| Arrays | .*/| Arrays | $ARRAYS |/" README.md
           sed -i "s/| BitManipulation | .*/| BitManipulation | $BITMANIPULATION |/" README.md
-          sed -i "s/| LinkedList | .*/| LinkedList | $LINKEDLIST |/" README.md
+          sed -i "s/| LinkedLists | .*/| LinkedLists | $LINKEDLIST |/" README.md
           sed -i "s/| Stack | .*/| Stack | $STACK |/" README.md
           sed -i "s/| Queue | .*/| Queue | $QUEUE |/" README.md
           sed -i "s/| Trees | .*/| Trees | $TREES |/" README.md
