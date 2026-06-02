@@ -1,6 +1,6 @@
 package Numbers;
-// Solid Rhombus
-public class Pattern11 {
+//Hollow Rhombus
+public class Pattern12 {
     public static void main(String[] args){
         int n=5;
         for(int i=1;i<=n;i++){
@@ -8,11 +8,15 @@ public class Pattern11 {
             for(int j=1;j<=(n-i);j++){
                 System.out.print(" ");
             }
-            //stars
             for(int k=1;k<=n;k++){
-                System.out.print("*");
+                if(i==1||i==n||k==1||k==n){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
             }
-            System.out.println();
+        System.out.println();
         }
     }
     
