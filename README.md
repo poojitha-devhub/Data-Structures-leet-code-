@@ -27,9 +27,9 @@
 
 ##  Problem Sources
 
-- 🔹 LeetCode
-- 🔹 GeeksforGeeks
-- 🔹 InterviewBit
+-  LeetCode
+-  GeeksforGeeks
+-  InterviewBit
 
 ---
 
