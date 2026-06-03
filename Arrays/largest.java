@@ -2,7 +2,7 @@ package Arrays;
 
 public class largest {
     public static int largestnum(int numbers[]){
-        int largest=numbers[0];
+        int largest=Integer.MIN_VALUE;
         for(int i=0;i<numbers.length;i++){
             if(numbers[i]>largest){
                 largest=numbers[i];
