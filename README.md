@@ -1,4 +1,4 @@
-# 🚀 Data Structures & Algorithms 
+#  Data Structures & Algorithms 
 
 ![Java](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java)
 ![Repo Size](https://img.shields.io/github/repo-size/srichimmy/Data-Structures-leet-code-?style=for-the-badge)
@@ -6,7 +6,7 @@
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/srichimmy/Data-Structures-leet-code-?style=for-the-badge)
 
 ---
-## 📊 Practice Progress 
+## Practice Progress 
 
 | Topic | Problems |
 |-------|----------|
@@ -21,11 +21,11 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
-> 🔥 Total Problems Solved: 72
+>  Total Problems Solved: 72
 
 ---
 
-## 🧠 Problem Sources
+##  Problem Sources
 
 - 🔹 LeetCode
 - 🔹 GeeksforGeeks
@@ -33,7 +33,7 @@
 
 ---
 
-## 🎯 Current Focus
+##  Current Focus
 
 - Strengthening core DSA fundamentals
 - Improving coding speed
@@ -42,7 +42,7 @@
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```
 Data-Structures-leet-code/
@@ -62,21 +62,21 @@ Data-Structures-leet-code/
 ---
 
 
-## 📈 GitHub Contribution Graph
+##  GitHub Contribution Graph
 
-Consistent daily problem solving 🚀
+Consistent daily problem solving 
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=poojitha-devhub&theme=github-dark)
 
 ---
 
-## 🔥 LeetCode Stats
+##  LeetCode Stats
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/sripoojitha02?theme=dark&font=Karma)
 
 ---
 
-## 💡 Daily Commitment
+##  Daily Commitment
 
 - Solve 1–3 problems daily
 - Push consistently
@@ -84,4 +84,4 @@ Consistent daily problem solving 🚀
 
 ---
 
-⭐ This repository tracks my journey toward mastering Data Structures & Algorithms.
+ This repository tracks my journey toward mastering Data Structures & Algorithms.
