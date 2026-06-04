@@ -2,6 +2,7 @@ package Arrays;
 
 public class Subarrays {
     public static void printSubarrays(int arr[]) {
+        int total=0;
         for(int i=0;i<arr.length;i++){
             int start=i;
             for(int j=i;j<arr.length;j++){
@@ -9,10 +10,12 @@ public class Subarrays {
                 for(int k=start;k<=end;k++){
                     System.out.print(arr[k]+ " ");
                 }
+                total++;
                 System.out.println();
             }
             System.out.println();
         }
+        System.out.println("total sub arrays: "+total);
         
     }
     public static void main(String[] args) {
