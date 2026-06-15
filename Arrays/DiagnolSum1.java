@@ -28,9 +28,9 @@ public class DiagnolSum1 {
     public static void main(String[] args) {
         int matrix[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
         int ans=diagsum(matrix);
-        System.out.println("Diagnol sum is = " + ans);
-        int opti=optiDiagnolSum(matrix);
-        System.out.println("the optimise code Diagnol Sum = " + opti);
+        System.out.println("Diagnol sum of matrix is = " + ans);
+        int optimal=optiDiagnolSum(matrix);
+        System.out.println("the optimise code Diagnol Sum = " + optimal);
     }
     
 }
