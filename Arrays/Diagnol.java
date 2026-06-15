@@ -22,6 +22,7 @@ public class Diagnol {
             s--;
             p++;
         }
+        System.out.println("my version of diagnol sum");
         System.out.println("left sum: "+ leftsum);
         System.out.println("right sum: "+ rightsum);
         System.out.println("total sum: " + (leftsum+rightsum));
