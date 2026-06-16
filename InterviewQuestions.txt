@@ -19,4 +19,40 @@ To avoid the "Diamond Problem" — ambiguity when two parent classes have a meth
 
 Q3. Difference between method overloading and overriding?
 
-OverloadingOverridingSame method name, different parametersSame method name and signatureResolved at compile timeResolved at runtimeCan occur in the same classRequires inheritanceReturn type can differReturn type must be same/covariant
+Overloading   Same method name, different parameters  Resolved at compile time Can occur in the same class  Return type can differ   
+
+Overriding   Same method name and signature   Resolved at runtime   Requires inheritance   
+
+Q4. Abstract class vs Interface — when to use which?
+
+
+Abstract classes can have constructors, instance variables, and a mix of abstract/concrete methods — use when classes share a common base and state.
+Interfaces (Java 8+) can have default and static methods but no instance state — use when unrelated classes need to guarantee a contract/behavior.
+A class can implement multiple interfaces but extend only one abstract class.
+
+
+Q5. What is the difference between this and super?
+this refers to the current object instance (used to resolve variable shadowing or call another constructor in the same class via this()). super refers to the immediate parent class — used to call parent constructors (super()) or access parent methods/fields hidden by overriding.
+
+
+2. Strings & Memory
+
+Q6. Why is String immutable in Java?
+For security, thread-safety, caching (String Pool), and hashcode consistency (so it's safe as a HashMap key). Once created, internal char/byte array references can't be changed; operations like concatenation create new objects.
+
+Q7. String vs StringBuilder vs StringBuffer?
+
+
+String: immutable.
+StringBuilder: mutable, not thread-safe, faster — use in single-threaded contexts.
+StringBuffer: mutable, thread-safe (synchronized methods), slightly slower.
+
+
+Q8. What is the String Pool?
+A special memory area in the heap where string literals are stored to avoid duplicate objects. String s1 = "hi" checks the pool first; new String("hi") always creates a new object on the heap, bypassing the pool unless .intern() is called.
+
+Q9. Difference between == and .equals()?
+== compares references (memory addresses) for objects, or values for primitives. .equals() compares logical/content equality and can be overridden (e.g., String, Integer override it; default Object implementation just does ==).
+
+Q10. What is the hashCode-equals contract?
+If two objects are equal via .equals(), they must have the same hashCode(). Violating this breaks HashMap/HashSet behavior — equal objects could land in different buckets and lookups would fail.
