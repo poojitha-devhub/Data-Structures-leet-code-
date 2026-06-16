@@ -56,3 +56,30 @@ Q9. Difference between == and .equals()?
 
 Q10. What is the hashCode-equals contract?
 If two objects are equal via .equals(), they must have the same hashCode(). Violating this breaks HashMap/HashSet behavior — equal objects could land in different buckets and lookups would fail.
+
+
+3. Collections Framework
+
+Q11. ArrayList vs LinkedList?
+
+
+ArrayList: backed by a dynamic array, O(1) random access, O(n) insert/delete in the middle.
+LinkedList: doubly linked list, O(1) insert/delete at ends, O(n) random access. Use ArrayList for frequent reads, LinkedList for frequent insertions/deletions.
+
+
+Q12. How does HashMap work internally?
+Keys are hashed via hashCode(), then mapped to a bucket index using hash & (n-1). Each bucket holds a linked list (or a red-black tree if a bucket exceeds 8 entries, since Java 8) of entries to handle collisions. On get(), the key's hash locates the bucket, then .equals() finds the exact match.
+
+Q13. HashMap vs TreeMap vs LinkedHashMap?
+
+
+HashMap: no ordering guarantee, O(1) average access.
+LinkedHashMap: maintains insertion order, slight overhead.
+TreeMap: sorted by natural order/comparator, O(log n) operations (backed by a Red-Black tree).
+
+
+Q14. HashMap vs ConcurrentHashMap?
+HashMap is not thread-safe. ConcurrentHashMap divides data into segments/buckets with finer-grained locking (CAS operations and synchronized blocks per bucket in Java 8+), allowing concurrent reads and writes without locking the whole map, unlike the older Hashtable which synchronizes every method.
+
+Q15. Fail-fast vs Fail-safe iterators?
+Fail-fast iterators (ArrayList, HashMap) throw ConcurrentModificationException if the collection is structurally modified during iteration. Fail-safe iterators (CopyOnWriteArrayList, ConcurrentHashMap) operate on a clone or snapshot, so concurrent modification doesn't throw an exception.
