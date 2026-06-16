@@ -1,0 +1,22 @@
+Java Interview Preparation Guide
+
+Most Asked Questions, Answers & Practice Problems (FAANG-Style)
+
+
+1. Core OOP Concepts
+
+Q1. What are the four pillars of OOP? Explain each briefly.
+
+
+Encapsulation: Bundling data and methods together, restricting direct access via private fields and public getters/setters.
+Abstraction: Hiding implementation details and exposing only essential features (via abstract classes/interfaces).
+Inheritance: A class acquiring properties and behavior of another class using extends.
+Polymorphism: One interface, multiple implementations — achieved via method overloading (compile-time) and overriding (runtime).
+
+
+Q2. Why does Java not support multiple inheritance with classes?
+To avoid the "Diamond Problem" — ambiguity when two parent classes have a method with the same signature and the compiler cannot decide which one to inherit. Java solves this using interfaces, where default method conflicts must be explicitly resolved by the implementing class.
+
+Q3. Difference between method overloading and overriding?
+
+OverloadingOverridingSame method name, different parametersSame method name and signatureResolved at compile timeResolved at runtimeCan occur in the same classRequires inheritanceReturn type can differReturn type must be same/covariant
