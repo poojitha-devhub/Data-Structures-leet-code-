@@ -83,3 +83,23 @@ HashMap is not thread-safe. ConcurrentHashMap divides data into segments/buckets
 
 Q15. Fail-fast vs Fail-safe iterators?
 Fail-fast iterators (ArrayList, HashMap) throw ConcurrentModificationException if the collection is structurally modified during iteration. Fail-safe iterators (CopyOnWriteArrayList, ConcurrentHashMap) operate on a clone or snapshot, so concurrent modification doesn't throw an exception.
+
+
+
+4. Exception Handling
+
+Q16. Checked vs Unchecked exceptions?
+
+
+Checked (e.g., IOException, SQLException): must be declared with throws or handled with try-catch; checked at compile-time.
+Unchecked (e.g., NullPointerException, ArithmeticException): subclasses of RuntimeException; not enforced at compile-time.
+
+
+Q17. finally vs finalize()?
+finally is a block that always executes after try-catch, used for cleanup (closing resources). finalize() is a method called by the garbage collector before object destruction — deprecated since Java 9 and unreliable for resource cleanup; use try-with-resources instead.
+
+Q18. Can you have a try block without a catch block?
+Yes — try with finally only, or try-with-resources without a catch, is valid.
+
+Q19. What happens if an exception is thrown inside a finally block?
+It suppresses any exception from the try/catch block and propagates instead, which can hide the original error — a common reason to avoid throwing exceptions inside finally.
