@@ -103,3 +103,139 @@ Yes — try with finally only, or try-with-resources without a catch, is valid.
 
 Q19. What happens if an exception is thrown inside a finally block?
 It suppresses any exception from the try/catch block and propagates instead, which can hide the original error — a common reason to avoid throwing exceptions inside finally.
+
+
+
+5. Multithreading & Concurrency
+
+Q20. Difference between Process and Thread?
+A process is an independent program with its own memory space; a thread is a lightweight unit of execution within a process, sharing the same memory/heap with other threads of that process.
+
+Q21. What is the synchronized keyword?
+It restricts access to a method/block to one thread at a time, using an intrinsic lock on the object (or class for static methods), preventing race conditions on shared resources.
+
+Q22. What is volatile?
+It ensures that reads/writes to a variable go directly to main memory rather than thread-local caches, guaranteeing visibility of changes across threads — but it does not guarantee atomicity (e.g., count++ is still not safe with just volatile).
+
+Q23. What is a deadlock, and how can you avoid it?
+A deadlock occurs when two or more threads are blocked forever, each waiting on a lock the other holds. Avoid it by: acquiring locks in a consistent global order, using timeouts (tryLock), or avoiding nested locks where possible.
+
+Q24. Runnable vs Callable?
+Runnable.run() returns nothing and can't throw checked exceptions. Callable.call() returns a value (Future<T>) and can throw checked exceptions — used with ExecutorService.submit().
+
+Q25. What is the Producer-Consumer problem and how do you solve it in Java?
+A classic concurrency problem where producers add to a shared buffer and consumers remove from it, requiring synchronization to avoid overflow/underflow. Solved using wait()/notify(), or more simply with BlockingQueue implementations like LinkedBlockingQueue, which handle the blocking internally.
+
+
+6. JVM Internals
+
+Q26. Explain the Java Memory Model (heap vs stack).
+
+
+Stack: stores method call frames, local variables, and references — memory is thread-specific and automatically freed when a method returns.
+Heap: stores actual objects and instance variables — shared across threads, managed by the Garbage Collector.
+
+
+Q27. How does Garbage Collection work?
+The JVM tracks object reachability from GC roots. Unreachable objects are eligible for collection. The heap is divided into Young Generation (Eden + Survivor spaces) and Old Generation; Minor GC cleans the Young Gen frequently, Major/Full GC cleans the Old Gen less often and is more expensive. Common collectors: Serial, Parallel, G1, ZGC.
+
+Q28. What is the difference between JDK, JRE, and JVM?
+
+
+JVM: runtime engine that executes bytecode.
+JRE: JVM + core libraries needed to run Java applications.
+JDK: JRE + development tools (compiler javac, debugger, etc.) needed to build Java applications.
+
+
+Q29. What are the different types of class loaders?
+Bootstrap (loads core JDK classes), Extension/Platform (loads ext libraries), and Application/System (loads classpath classes) — following the parent delegation model where a request is passed up before being handled locally.
+
+
+7. Java 8+ Features
+
+Q30. What is a Lambda expression?
+A concise way to represent an anonymous function implementing a functional interface (an interface with exactly one abstract method), e.g., (a, b) -> a + b.
+
+Q31. What are Streams, and how do they differ from Collections?
+Streams are a pipeline for processing sequences of elements declaratively (filter, map, reduce) without modifying the source. Unlike collections, streams are lazily evaluated, can be processed once, and support parallel execution easily (.parallelStream()).
+
+Q32. What is Optional and why use it?
+A container that may or may not hold a non-null value, used to avoid NullPointerException by forcing explicit handling of absence (isPresent(), orElse(), map()) instead of returning raw null.
+
+Q33. Difference between map() and flatMap() in Streams?
+map() transforms each element to another single object (1-to-1). flatMap() transforms each element into a stream and flattens the result into a single stream (1-to-many, useful for nested collections like List<List<T>>).
+
+
+8. Design Patterns (Frequently Asked)
+
+Q34. How do you implement a thread-safe Singleton?
+
+javapublic class Singleton {
+    private static volatile Singleton instance;
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+
+This is the "double-checked locking" pattern — volatile prevents issues from instruction reordering during object construction.
+
+Q35. Name a few design patterns commonly used in Java backend systems.
+Singleton (shared resource access), Factory (object creation abstraction), Builder (complex object construction), Observer (event-driven systems), Strategy (interchangeable algorithms).
+
+
+Practice Questions
+
+A. Conceptual / Rapid-Fire (good for verbal rounds)
+
+
+Why is the main method static in Java?
+Can a constructor be private? What's the use case?
+What is the difference between final, finally, and finalize?
+What is type erasure in generics?
+Why are array indices zero-based in Java?
+What is autoboxing/unboxing, and where can it cause subtle bugs?
+Explain the difference between shallow copy and deep copy.
+What is the difference between throw and throws?
+Can you override a static method? Why or why not?
+What is the difference between composition and inheritance, and when would you prefer one over the other?
+
+
+B. Coding Problems (write working Java code)
+
+
+Implement an immutable class with a mutable field (e.g., a List) without exposing internal references.
+Reverse a String without using any built-in reverse methods.
+Check if a String is a palindrome (case-insensitive, ignoring spaces).
+Find the first non-repeating character in a String.
+Detect a duplicate in an integer array in O(n) time and O(1) extra space (no HashSet).
+Implement your own simple LRU Cache (without using LinkedHashMap).
+Write a producer-consumer setup using BlockingQueue.
+Implement a custom checked exception class and demonstrate its usage.
+Write a method to detect a cycle in a singly linked list (Floyd's algorithm).
+Implement a basic generic Stack<T> class using an array, including push/pop/peek and overflow/underflow handling.
+Given an array of integers, find two numbers that add up to a target (Two Sum) — solve with O(n) time using a HashMap.
+Implement equals() and hashCode() correctly for a custom Employee class with id and name fields.
+
+
+C. System-Design-Adjacent (for senior/FAANG rounds)
+
+
+How would you design a thread-safe in-memory cache with expiration (TTL) for entries?
+How would you design a rate limiter using Java's concurrency utilities?
+Walk through how you'd debug a memory leak in a long-running Java service.
+How would you make a REST API endpoint idempotent in a Java/Spring service?
+
+
+
+Suggested Study Approach
+
+Pair this with your DSA tracker — for each topic, aim to: (1) recall the definition out loud without notes, (2) write the code from scratch for the "Coding Problems" section, and (3) explain trade-offs (time/space complexity, thread-safety implications) since FAANG interviewers often probe "why" over "what."
