@@ -11,7 +11,7 @@
 | Topic | Problems |
 |-------|----------|
 | Numbers | 30 |
-| Strings | 15 |
+| Strings | 16 |
 | Arrays | 31 |
 | BitManipulation | 10 |
 | LinkedLists | 9 |
@@ -21,7 +21,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
->  Total Problems Solved: 96
+>  Total Problems Solved: 97
 
 ---
 
