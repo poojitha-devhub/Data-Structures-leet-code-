@@ -13,7 +13,7 @@
 | Numbers | 30 |
 | Strings | 17 |
 | Arrays | 31 |
-| BitManipulation | 15 |
+| BitManipulation | 16 |
 | LinkedLists | 9 |
 | Stacks | 1 |
 | Queues | 0 |
@@ -21,7 +21,7 @@
 | Graphs | 0 |
 | DynamicProgramming | 0 |
 
->  Total Problems Solved: 103
+>  Total Problems Solved: 104
 
 ---
 
